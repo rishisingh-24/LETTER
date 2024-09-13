@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology Letter</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <audio id="myAudio" loop>
+        <source src="./HEERIYE.mpeg" type="audio/mp3">
+      </audio>
+    
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Panda Forgive Me 🥹🥹</strong>
+                        
+                        <p>
+                            !!मेरे प्यारे पांडा जी, मैं आपके साथ जो किया वह गलत था और मैं इसके लिए माफी मांगता हूँ। मैं सच में बहुत पछतावा कर रहा हूँ और मैं इसके लिए माफी मांगता हूँ।
+                            जो भी हुआ मैं अनजान था मैं तो बस ये कहना चाहता था कि और भी बहुत कुछ काम है करने को तो बस व्ही मेय कह रहा था कि पढ़ना भी है वो लोग ये क्यों नहीं समझते। पर मुझे तुम्हें बुरा लगेगा ऐसे कहने का कोई इरादा नहीं था। माफ़ कर दे हमें पांडा जी 🥺🥺!!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+        var audio = document.getElementById("myAudio");
+        window.addEventListener('click', function() {
+        audio.play();
+        });
+
+    </script>
+</body>
+</html>
